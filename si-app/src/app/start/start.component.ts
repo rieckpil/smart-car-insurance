@@ -22,6 +22,7 @@ export class StartComponent implements OnInit {
   ngOnInit() {  }
 
   onFileChange(event) {
+    this.s.error=false;
     const reader = new FileReader();
     if(event.target.files && event.target.files.length > 0) {
       const file = event.target.files[0];

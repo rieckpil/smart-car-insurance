@@ -20,6 +20,7 @@ export class SrvService {
   public typ = '';
   public hersteller = '';
   public leistung = 0;
+  public error = false;
 
   haftpflichtChecked = false;
   teilkaskoChecked = false;
@@ -43,6 +44,7 @@ export class SrvService {
        err => {
         console.error(err);
         this.loading = false;
+        this.error = true;
       },
       () => {
         console.log('done loading');
