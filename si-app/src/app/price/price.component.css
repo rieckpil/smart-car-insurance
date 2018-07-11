@@ -1,0 +1,23 @@
+.btn{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+table{
+    width: 100%;
+    font-size: 1.2em;
+}
+
+table tr td:nth-child(1){
+    text-align: left;
+}
+table  tr td:nth-child(2){
+    text-align: right;
+}
+
+.lastRow{
+    border-top:1pt double black;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}

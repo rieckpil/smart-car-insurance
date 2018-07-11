@@ -1,0 +1,17 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.linehuk{
+  height: 4px;
+  color: yellow;
+  border: 0;
+  background-color: yellow;
+}
+
+.container{
+  text-align: center;
+}
+

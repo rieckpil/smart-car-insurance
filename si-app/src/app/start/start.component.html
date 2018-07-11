@@ -1,0 +1,12 @@
+<h1>SCI App</h1>
+
+<div style="height:30px;"></div>
+<label for="picture">Fahrzeugschein wählen</label>
+
+<div style="height:10px;"></div>
+<input class="mat-raised-button mat-accent" type="file" id="picture" (change)="onFileChange($event)" #fileInput accept="image/*">
+  
+<div style="height:30px;"></div>
+<button mat-raised-button color="accent" [disabled]="!picture" (click)="onSubmit()">Hochladen und Beitrag berechnen</button>
+<div style="height:30px;"></div>
+<img src="/assets/loader.gif" *ngIf="s.loading" />
