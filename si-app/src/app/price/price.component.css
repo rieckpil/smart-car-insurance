@@ -21,3 +21,15 @@ table  tr td:nth-child(2){
     margin-top: 10px;
     font-weight: bold;
 }
+
+table.compare{
+    font-size: 0.9em;
+}
+
+h2{
+    margin:15px;
+}
+
+.thumb{
+    margin-right: 5px;
+}
