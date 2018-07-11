@@ -34,7 +34,7 @@ const appRoutes: Routes = [
     FinalComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, MatButtonModule, MatCheckboxModule, MatIconModule, RouterModule.forRoot(appRoutes), MatInputModule, BrowserAnimationsModule
+    BrowserModule, HttpClientModule, MatButtonModule, MatCheckboxModule, MatIconModule, RouterModule.forRoot(appRoutes, { useHash: true }), MatInputModule, BrowserAnimationsModule
   , FormsModule ],
   providers: [SrvService],
   bootstrap: [AppComponent],
