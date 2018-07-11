@@ -1,10 +1,14 @@
 <h1>Smart Insurance</h1>
-<h5>optimale Sicherheit ohne Frustration</h5>
-<div style="height:50px;"></div>
-<label for="picture">Fahrzeugschein wählen</label>
+<h3>Demonstrator</h3>
 
-<div style="height:10px;"></div>
-<input class="mat-raised-button mat-primary" type="file" id="picture" (change)="onFileChange($event)" #fileInput accept="image/*">
+<h5>optimale Sicherheit ohne Frustration</h5>
+
+
+<div style="height:50px;"></div>
+<label class="mat-raised-button mat-primary" for="picture" class="custom-file-upload">
+    Foto vom Fahrzeugschein aufnehmen
+</label>
+<input  type="file" id="picture" (change)="onFileChange($event)" #fileInput accept="image/*">
   
 <div style="height:30px;"></div>
 <button mat-raised-button color="primary" [disabled]="!picture" (click)="onSubmit()">Hochladen und Beitrag berechnen</button>
