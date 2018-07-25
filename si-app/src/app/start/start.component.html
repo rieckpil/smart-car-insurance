@@ -9,12 +9,6 @@
     Foto vom Fahrzeugschein aufnehmen
 </label>
 <input  type="file" id="picture" (change)="onFileChange($event)" #fileInput accept="image/*">
-  
-<div style="height:10px;"></div>
-<label class="mat-raised-button mat-primary" for="picture2" class="custom-file-upload">
-    Foto vom aktuellen Versicherungsschein
-</label>
-<input  type="file" id="picture2"  accept="image/*">
 
 <div style="height:30px;"></div>
 <button mat-raised-button color="primary" [disabled]="!picture" (click)="onSubmit()">Hochladen und Beitrag berechnen</button>

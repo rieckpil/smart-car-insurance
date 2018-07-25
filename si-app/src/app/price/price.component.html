@@ -1,57 +1,14 @@
 <h2>Ihr Fahrzeug</h2>
 <table>
   <tr>
-    <td>Hersteller:</td>
-    <td>{{s.hersteller}}</td>
+    <td>HSN:</td>
+    <td>{{s.hsn}}</td>
   </tr>
   <tr>
-    <td>Typ:</td>
-    <td>{{s.typ}}</td>  
-  </tr>
-  <tr>
-    <td>Leistung:</td>
-    <td>{{s.leistung}}PS</td>  
+    <td>TSN:</td>
+    <td>{{s.tsn}}</td>
   </tr>
 </table>
 
-<h2>Vergleich</h2>
-<table class="compare" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><img src="/assets/green.png" width="15" height="15" class="thumb" />Deckungsbeitrag</td>
-    <td>1 Mio € bisher, 2 Mio zukünftig</td>
-  </tr>
-  <tr>
-    <td><img src="/assets/green.png" width="15" height="15" class="thumb" />Marderschaden</td>
-    <td>bisher nicht, zukünftig ja</td>
-  </tr>
-  <tr>
-    <td><img src="/assets/red.png" width="15" height="15" class="thumb" />Werkstattbindung</td>
-    <td>bisher nicht, zukünftig ja</td>
-  </tr>  
-</table>
-
-<h2>Ihr Angebot</h2>
-<table>
-  <tr>
-    <td><mat-checkbox [checked]='s.haftpflichtChecked'  (change)="haftpflichtChanged($event)" ><label>Haftpflicht</label></mat-checkbox></td>
-    <td>{{s.haftpflicht}}€ / Jahr</td>
-  </tr>
-  <tr>
-    <td><mat-checkbox [checked]='s.vollkaskoChecked' (change)="vollkaskoChanged($event)"><label>Vollkasko</label></mat-checkbox></td>
-    <td>{{s.vollkasko}}€ / Jahr</td>  
-  </tr>
-  <tr>
-    <td><mat-checkbox [checked]='s.teilkaskoChecked'  (change)="teilkaskoChanged($event)"><label>Teilkasko</label></mat-checkbox></td>
-    <td>{{s.teilkasko}}€ / Jahr</td>  
-  </tr>
-
-  <tr class="lastRow">
-    <td class="lastRow">Gesamt</td>
-    <td class="lastRow">{{s.fullprice}}€ / Jahr</td>  
-  </tr>
-
-  
-</table>
 <div style="height:50px;"></div>
 <button mat-raised-button color="primary" [routerLink]="['/start']" class="btn">Back</button>
-<button mat-raised-button color="primary" [routerLink]="['/last']" (disabled)="btnDisabled" class="btn">Persönliche Daten</button>

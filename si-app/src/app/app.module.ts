@@ -10,8 +10,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { FinalComponent } from './final/final.component';
-import { LastComponent } from './last/last.component';
 import { PriceComponent } from './price/price.component';
 import { StartComponent } from './start/start.component';
 
@@ -19,9 +17,7 @@ import { SrvService } from './srv.service';
 
 const appRoutes: Routes = [
   { path: '', component: StartComponent },
-  { path: 'price',      component: PriceComponent },
-  { path: 'last',      component: LastComponent },
-  { path: 'final',      component: FinalComponent },
+  { path: 'data',      component: PriceComponent },
   { path: '**', component: StartComponent }
 ];
 
@@ -30,8 +26,6 @@ const appRoutes: Routes = [
     AppComponent,
     StartComponent,
     PriceComponent,
-    LastComponent,
-    FinalComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, MatButtonModule, MatCheckboxModule, MatIconModule, RouterModule.forRoot(appRoutes, { useHash: true }), MatInputModule, BrowserAnimationsModule
