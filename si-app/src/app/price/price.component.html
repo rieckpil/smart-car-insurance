@@ -34,20 +34,20 @@
 <table>
   <tr>
     <td><mat-checkbox [checked]='s.haftpflichtChecked'  (change)="haftpflichtChanged($event)" ><label>Haftpflicht</label></mat-checkbox></td>
-    <td>{{s.haftpflicht}}€ / Jahr</td>
+    <td>{{s.haftpflicht | number : '1.2-2' }}€ / Jahr</td>
   </tr>
   <tr>
     <td><mat-checkbox [checked]='s.vollkaskoChecked' (change)="vollkaskoChanged($event)"><label>Vollkasko</label></mat-checkbox></td>
-    <td>{{s.vollkasko}}€ / Jahr</td>  
+    <td>{{s.vollkasko | number : '1.2-2' }}€ / Jahr</td>
   </tr>
   <tr>
     <td><mat-checkbox [checked]='s.teilkaskoChecked'  (change)="teilkaskoChanged($event)"><label>Teilkasko</label></mat-checkbox></td>
-    <td>{{s.teilkasko}}€ / Jahr</td>  
+    <td>{{s.teilkasko | number : '1.2-2' }}€ / Jahr</td>
   </tr>
 
   <tr class="lastRow">
     <td class="lastRow">Gesamt</td>
-    <td class="lastRow">{{s.fullprice}}€ / Jahr</td>  
+    <td class="lastRow">{{s.fullprice | number : '1.2-2' }}€ / Jahr</td>
   </tr>
 
   
